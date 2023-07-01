@@ -25,12 +25,12 @@ public final class Employee$ {
         false
     );
     /**
-     * This Field corresponds to the {@link Employee} field name.
+     * This Field corresponds to the {@link Employee} field salary.
      */
-    public static final StringField<Employee> name = StringField.create(
+    public static final DoubleField<Employee> salary = DoubleField.create(
         Employee.class,
-        "name",
-        Employee::getName,
+        "salary",
+        Employee::getSalary,
         false
     );
     /**
@@ -43,12 +43,12 @@ public final class Employee$ {
         false
     );
     /**
-     * This Field corresponds to the {@link Employee} field salary.
+     * This Field corresponds to the {@link Employee} field name.
      */
-    public static final DoubleField<Employee> salary = DoubleField.create(
+    public static final StringField<Employee> name = StringField.create(
         Employee.class,
-        "salary",
-        Employee::getSalary,
+        "name",
+        Employee::getName,
         false
     );
 }

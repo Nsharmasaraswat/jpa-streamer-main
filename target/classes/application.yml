@@ -1,14 +1,14 @@
 server:
-    port: 8080
+    port: 7000
 spring:
     application:
         name: sample-spring-jpa-streamer
     datasource:
 #        driver-class-name: com.mysql.cj.jdbc.Driver
 
-        url: jdbc:postgresql://localhost:5432/javatechie
+        url: jdbc:postgresql://containers-us-west-74.railway.app:7025/railway
         username: postgres
-        password: root
+        password: OUfqmaXCGqK5ZTwABLgM
     jpa:
         hibernate:
             ddl-auto: update
