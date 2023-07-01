@@ -1,0 +1,19 @@
+server:
+    port: 8080
+spring:
+    application:
+        name: sample-spring-jpa-streamer
+    datasource:
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+
+        url: jdbc:postgresql://localhost:5432/javatechie
+        username: postgres
+        password: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: true
+        show-sql: true
